@@ -16,12 +16,12 @@
       <div class="section no-pad-bot">
         <div class="container">
           <br><br>
-          <h1 class="header center light apropos">Thibault Osmont</h1>
+          <h1 class="header center light lobster">Thibault Osmont</h1>
           <div class="row center">
           <img src="icon_128.png" alt="avatar" class="circle responsive-img" id="avatar">
           </div>
           <div class="row center">
-            <h5 class="header col s12 light">Développeur Informatique</h5>
+            <h5 class="header col s12 light ubuntu">Développeur Informatique</h5>
           </div>
 
           <br><br>
@@ -30,24 +30,89 @@
       </div>
       <div class="parallax"><img src="background_it_1.png"></div>
     </div>
-    <div class="navbar-fixed">
+    <div class="navbar" id="navFixed">
       <nav class="navBlue">
         <div class="nav-wrapper">
           <ul class="left hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li class="active"><a href="collapsible.html">JavaScript</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Compétences</a></li>
+            <li><a href="#">Expériences</a></li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
 
-  <h1 class="apropos">A propos de moi</h1>
+  <div class="section white scrollspy" id="afterNav">
+    <div class="row container"></div>
+      <h2 class="lobster">A propos de moi</h2>
+      <p>
+        Initialement intéressé par les sciences économiques et sociales, je suis titulaire d'un bac dans cette spécialité depuis 2013.
+        C'est durant cette année que me vient une passion pour l'informatique et le numérique, c'est pourquoi je me suis engagé, avec succès,
+        dans un DUT Informatique. Titulaire de ce diplôme depuis 2015, je me suis engagé dans une License Professionnelle, spécialité Services Informatiques et Logiciels,
+        en alternance avec le groupe La Poste.
+      </p>
+   </div> 
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="bg_andro-1.png" alt="Au coeur d'Android"/>
+    </div>
+  </div>  
+
+  <div class="section white scrollspy" id="afterNav">
+    <h2 class="lobster">Expériences Professionnelles</h2>
+    <div class="col l6 s6">
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <i class="material-icons circle" id="red">polymer</i>
+          <span class="title">Développement Logiciel</span>
+          <p>First Line <br>
+             Second Line
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle">code</i>
+          <span class="title">Développement WEB</span>
+          <p>First Line <br>
+             Second Line
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle" id="greenAndro">android</i>
+          <span class="title">Développement Mobile</span>
+          <p>First Line <br>
+             Second Line
+          </p>
+          <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+        </li>
+      </ul> 
+    </div>  
+  </div>
+
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
+  <script>
+      $(document).ready(function() {
+
+        $(".left li").on("click", function() {
+          $(".left li").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        $(window).scroll(function() {
+          if($(this).scrollTop() > 100) {
+            //$("#navFixed").addClass("navFixedTop");
+            $("#navFixed").attr("class", "navFixedTop");
+          }
+          $("#navFixed").removeClass("navFixedTop");
+        })
+      });
+  </script>
 </body>  
 </html>

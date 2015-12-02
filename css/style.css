@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300);
 
 /* Custom Stylesheet */
 /**
@@ -15,6 +16,8 @@ nav .brand-logo {
 
 p {
   line-height: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
 }
 
 .button-collapse {
@@ -61,13 +64,46 @@ footer.page-footer {
 /*MINE*/
 
 .navBlue {
-  background-color: #4399D6;
+  background-color: #29698D;
+}
+
+li {
+  text-color: white;
+}
+
+#red {
+  background-color: red;
+}
+
+#greenAndro {
+  color: #98CB00;
+  font-size: 25px;
+  background-color: white;
+}
+
+.star {
+  color: #29698D;
+}
+
+.navFixedTop {
+  z-index: 9999; 
+  position: fixed; 
+  top: 0;
 }
 
 #avatar {
   width: 200px;
 }
 
-.apropos {
+.lobster {
   font-family: "Lobster", cursive;
+}
+
+.ubuntu {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#afterNav {
+  width: 90%;
+  padding-left: 5%;
 }
