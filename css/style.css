@@ -96,6 +96,7 @@ li a{
   width: 100%;
   z-index: 9999;  
   top: 0;
+  padding-bottom: 4.5rem;
 }
 
 #avatar {
@@ -137,10 +138,6 @@ body {
   text-align: center;
 }
 
-.icons {
-  width: 1%;
-}
-
 #vertical-container {
   background-image: url(../img/background_it_2-blur.jpeg);
   background-attachment: fixed;
@@ -149,4 +146,24 @@ body {
 #vertical-container h2 {
   color: white;
   padding-left: 5%;
+}
+
+#me-contacter {
+  width: 50%;
+  margin-left: 25%;
+}
+
+#ul-contact {
+  margin-top: 4em; 
+}
+
+.icones {
+  left: 4%;
+  position: absolute;
+}
+
+.petite-icone {
+  left: 3%;
+  position: absolute;
+  width: 40px;
 }
