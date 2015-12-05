@@ -2113,7 +2113,8 @@ img.responsive-img, video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 500px; }
+  height: 650px; 
+}
 
 .parallax {
   position: absolute;
@@ -2319,7 +2320,7 @@ td, th {
         display: inline-block;
         vertical-align: middle; }
       .collection .collection-item.avatar i.circle {
-        font-size: 18px;
+        font-size: 25px;
         line-height: 42px;
         color: #fff;
         background-color: #999;

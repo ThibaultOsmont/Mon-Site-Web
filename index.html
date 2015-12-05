@@ -1,118 +1,260 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
     <title>Thibault Osmont</title>
-
     <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/material-icons.css">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- Vertical timeline -->
+    <link rel="stylesheet" type="text/css" href="css/vertical-timeline.css">
+    <!--  <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
   </head>
   <body>
-  <header>
-    <div id="index-banner" class="parallax-container scrollspy">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <br><br>
-          <h1 class="header center light lobster">Thibault Osmont</h1>
-          <div class="row center">
-          <img src="icon_128.png" alt="avatar" class="circle responsive-img" id="avatar">
+    <header>
+      <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br><br>
+            <h1 class="header center light lobster">Thibault Osmont</h1>
+            <div class="row center">
+              <img src="img/icon_128.png" alt="avatar" class="circle responsive-img" id="avatar">
+            </div>
+            <div class="row center">
+              <h5 class="header col s12 light ubuntu">Développeur Informatique</h5>
+            </div>
+            <br><br>
           </div>
-          <div class="row center">
-            <h5 class="header col s12 light ubuntu">Développeur Informatique</h5>
-          </div>
-
-          <br><br>
-
         </div>
+        <div class="parallax"><img src="img/background_it_1.png"></div>
       </div>
-      <div class="parallax"><img src="background_it_1.png"></div>
-    </div>
-    <div class="navbar" id="navFixed">
-      <nav class="navBlue">
-        <div class="nav-wrapper">
-          <ul class="left hide-on-med-and-down">
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Compétences</a></li>
-            <li><a href="#">Expériences</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <div class="section white scrollspy" id="afterNav">
-    <div class="row container"></div>
+      <div id="navbar">
+        <nav class="navBlue">
+          <div class="">
+            <ul class="left hide-on-med-and-down">
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Compétences</a></li>
+              <li><a href="#">Expériences</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="section" id="afterNav">
+      <div class="row container"></div>
       <h2 class="lobster">A propos de moi</h2>
-      <p>
+      <p id="white">
         Initialement intéressé par les sciences économiques et sociales, je suis titulaire d'un bac dans cette spécialité depuis 2013.
         C'est durant cette année que me vient une passion pour l'informatique et le numérique, c'est pourquoi je me suis engagé, avec succès,
         dans un DUT Informatique. Titulaire de ce diplôme depuis 2015, je me suis engagé dans une License Professionnelle, spécialité Services Informatiques et Logiciels,
         en alternance avec le groupe La Poste.
       </p>
-   </div> 
-
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="bg_andro-1.png" alt="Au coeur d'Android"/>
     </div>
-  </div>  
-
-  <div class="section white scrollspy" id="afterNav">
-    <h2 class="lobster">Expériences Professionnelles</h2>
-    <div class="col l6 s6">
-      <ul class="collection">
-        <li class="collection-item avatar">
-          <i class="material-icons circle" id="red">polymer</i>
-          <span class="title">Développement Logiciel</span>
-          <p>First Line <br>
-             Second Line
-          </p>
-          <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
-        </li>
-        <li class="collection-item avatar">
-          <i class="material-icons circle">code</i>
-          <span class="title">Développement WEB</span>
-          <p>First Line <br>
-             Second Line
-          </p>
-          <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
-        </li>
-        <li class="collection-item avatar">
-          <i class="material-icons circle" id="greenAndro">android</i>
-          <span class="title">Développement Mobile</span>
-          <p>First Line <br>
-             Second Line
-          </p>
-          <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
-        </li>
-      </ul> 
-    </div>  
-  </div>
-
-  <!--  Scripts-->
-  <script src="js/jquery-2.1.4.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  <script>
+    <!-- <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/background_it_2.jpeg" alt="Au coeur du numérique">
+      </div>
+    </div> -->
+    <div class="section" id="vertical-container">
+      <h2 class="lobster">Mon Expérience</h2>
+      <section id="cd-timeline" class="cd-container">
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="img/icons/ic_school_white_24px.svg" alt="License Pro">
+          </div>
+          <!-- cd-timeline-img -->
+          <div class="cd-timeline-content">
+            <h3 class="ubuntu">License Professionnelle</h3>
+            <p class="ubuntu">Mention Services Informatiques et Logiciels, spécialité Développement d'Applications Réparties.
+              <br>IUT de Nantes
+              <br>En alternance avec le Groupe La Poste (DSI Centrale de Nantes).
+            </p>
+            <span class="cd-date">2015 - 2016</span>
+          </div>
+          <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block droite">
+          <div class="cd-timeline-img blue">
+            <img src="img/icons/ic_work_white_24px.svg" alt="Job d'été 2015">
+          </div>
+          <!-- cd-timeline-img -->
+          <div class="cd-timeline-content">
+            <h3 class="ubuntu">Étancheur</h3>
+            <p>Travail d'été pour la société Cofely Axima, du groupe Engie, sur le chantier de la Direction Générale de l'Armement à Rennes.</p>
+            <span class="cd-date">29 Juin - 14 Août 2015</span>
+          </div>
+          <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block droite">
+          <div class="cd-timeline-img blue">
+            <img src="img/icons/ic_work_white_24px.svg" alt="Job d'été 2015">
+          </div>
+          <!-- cd-timeline-img -->
+          <div class="cd-timeline-content">
+            <h3 class="ubuntu">Stagiaire</h3>
+            <p>Stage d'application et de fin de DUT Informatique réalisé au sein du groupe La Poste (DSI Centrale de Nantes).
+              <br>Ma mission était d'étendre les fonctionnalités d'une application de suivi de mises en productions. Les principales fonctionnalités
+              que j'ai implémenté étant la possibilité de supprimer une mise en production recensée dans cette application (de façon logique et non
+              physique pour éviter les dangers), ainsi que la possibilité de comparer les bases de données de développement et de production pour chaque
+              application. Ce qui permet de comparer les différentes bases de données d'une application afin d'alerter si des tables ou des colonnes
+              ont été rajoutées ou supprimées, avant toute mise en production.
+            </p>
+            <span class="cd-date">13 Avril - 19 Juin 2015</span>
+          </div>
+          <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="img/icons/ic_school_white_24px.svg" alt="License Pro">
+          </div>
+          <!-- cd-timeline-img -->
+          <div class="cd-timeline-content">
+            <h3 class="ubuntu">Diplôme Universitaire de Technologie</h3>
+            <p class="ubuntu">Mention Informatique.
+              <br>IUT de Nantes
+            </p>
+            <span class="cd-date">2013 - 2015</span>
+          </div>
+          <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="img/icons/ic_school_white_24px.svg" alt="License Pro">
+          </div>
+          <!-- cd-timeline-img -->
+          <div class="cd-timeline-content">
+            <h3 class="ubuntu">Baccalauréat Économique et Social</h3>
+            <p class="ubuntu">Mention Assez Bien.
+              <br>Lycée de La Herdrie (Nantes)
+            </p>
+            <span class="cd-date">2013</span>
+          </div>
+          <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+      </section>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/bg_andro-1.png" alt="Au coeur d'Android"/>
+      </div>
+    </div>
+    <div class="section" id="afterNav">
+      <h2 class="lobster">Mes Compétences</h2>
+      <br><br>
+      <div class="row">
+        <div class="col l6 m12">
+          <h5 class="lobster competences">En informatique...</h5>
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <i class="material-icons circle red">polymer</i>
+              <span class="title">Développement Logiciel</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle green">code</i>
+              <span class="title">Développement WEB</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="img/icons/ic_android_green_24px.svg" alt="Android" class="circle">
+              <span class="title">Développement Mobile</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle blue-grey">desktop_windows</i>
+              <span class="title">Systèmes d'exploitation</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col l6 m12">
+          <h5 class="lobster competences">Compétences diverses...</h5>
+          <ul class="collection">
+            <li class="collection-item avatar">
+              <i class="material-icons circle orange">business</i>
+              <span class="title">Gestion des Organisations</span>
+              <p>Gestion des organisations<br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle">copyright</i>
+              <span class="title">Droit des Technologies de l'Information et de la Communication</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle green">attach_money</i>
+              <span class="title">Économie</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+            </li>
+            <li class="collection-item avatar">
+              <i class="material-icons circle blue">language</i>
+              <span class="title">Langues</span>
+              <p>First Line <br>
+                Second Line
+              </p>
+              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--  Scripts-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <!-- Vertical timeline -->
+    <script src="js/main.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script>
       $(document).ready(function() {
-
+      
         $(".left li").on("click", function() {
           $(".left li").removeClass("active");
           $(this).addClass("active");
         });
-
+      
         $(window).scroll(function() {
-          if($(this).scrollTop() > 100) {
-            //$("#navFixed").addClass("navFixedTop");
-            $("#navFixed").attr("class", "navFixedTop");
+          if($(this).scrollTop() > 431) {
+            $("#navbar").attr("class", "navFixedTop");
+            $(".row:first-child").css("padding-top", "4.5rem");
           }
-          $("#navFixed").removeClass("navFixedTop");
-        })
+          else {
+            $("#navbar").removeClass("navFixedTop");
+            $(".row:first-child").css("padding-top", "0");
+          }
+        });
       });
-  </script>
-</body>  
+    </script>
+  </body>
 </html>
+

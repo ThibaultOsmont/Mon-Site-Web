@@ -30,9 +30,15 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+  width: 100%;
+}
+
+.parallax-container:not(#index-banner) {
+  border-top: 25px solid;
+  border-bottom: 25px solid;
+  border-color: #191919;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -64,11 +70,11 @@ footer.page-footer {
 /*MINE*/
 
 .navBlue {
-  background-color: #29698D;
+  background-color: #191919;
 }
 
-li {
-  text-color: white;
+li a{
+  color: white;
 }
 
 #red {
@@ -82,12 +88,13 @@ li {
 }
 
 .star {
-  color: #29698D;
+  color: #3B7D9E;
 }
 
 .navFixedTop {
-  z-index: 9999; 
-  position: fixed; 
+  position: fixed;
+  width: 100%;
+  z-index: 9999;  
   top: 0;
 }
 
@@ -105,5 +112,41 @@ li {
 
 #afterNav {
   width: 90%;
+  padding-left: 5%;
+  background-color: #2A6CA7;
+}
+
+#afterNav h2, #white {
+  color: white;
+}
+
+body {
+  background-color: #2A6CA7;
+}
+
+.littleIcon {
+  width: 40px;
+  padding-top: 5px;
+}
+
+#css3 {
+  width: 47px;
+}
+
+.competences {
+  text-align: center;
+}
+
+.icons {
+  width: 1%;
+}
+
+#vertical-container {
+  background-image: url(../img/background_it_2-blur.jpeg);
+  background-attachment: fixed;
+}
+
+#vertical-container h2 {
+  color: white;
   padding-left: 5%;
 }
