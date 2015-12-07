@@ -2313,8 +2313,8 @@ td, th {
       position: relative; }
       .collection .collection-item.avatar .circle {
         position: absolute;
-        width: 42px;
-        height: 42px;
+        width: 45px;
+        height: 45px;
         overflow: hidden;
         left: 15px;
         display: inline-block;
@@ -2568,7 +2568,8 @@ nav ul a span.badge {
   user-select: none; }
 
 .circle {
-  border-radius: 50%; }
+  border-radius: 50%; 
+}
 
 .center-block {
   display: block;

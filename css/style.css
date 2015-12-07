@@ -11,13 +11,23 @@
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+  transition: background 0.5s;
+}
+
+nav ul a:hover {
+  background-color: #263238;
+  transition: background 0.5s;
+}
+
+nav ul a:focus {
+  background-color: #263238;
 }
 
 p {
   line-height: 2rem;
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
+  text-align: justify;
 }
 
 .button-collapse {
@@ -114,7 +124,8 @@ li a{
 #afterNav {
   width: 90%;
   padding-left: 5%;
-  background-color: #2A6CA7;
+  background-color: #263238 ;
+ /* background-color: #2A6CA7; BLEU*/
 }
 
 #afterNav h2, #white {
@@ -122,7 +133,8 @@ li a{
 }
 
 body {
-  background-color: #2A6CA7;
+  /*background-color: #2A6CA7; BLEU*/
+  background-color: #263238 ;
 }
 
 .littleIcon {
@@ -146,6 +158,31 @@ body {
 #vertical-container h2 {
   color: white;
   padding-left: 5%;
+}
+
+.competences-petite-image {
+  width: 40px;
+  position: absolute;
+  overflow: hidden;
+  display: inline-block;
+  margin-left: -12px;
+  margin-top: 2px;
+}
+
+.competences-petite-image ~ .title {
+  padding-left: 35px;
+}
+
+.collapsible-body {
+  background-color: white
+}
+
+.collapsible-body  p {
+  font-size: 16px;
+}
+
+p strong {
+  font-weight: bolder;
 }
 
 #me-contacter {

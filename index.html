@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -38,14 +36,15 @@
           <div class="">
             <ul class="left hide-on-med-and-down">
               <li><a href="#afterNav">A propos</a></li>
-              <li><a href="#parcours">Parcour</a></li>
-              <li><a href="#">Compétences</a></li>
+              <li><a href="#parcours">Parcours</a></li>
+              <li><a href="#competences">Compétences</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </nav>
       </div>
     </header>
-    <div class="section" id="afterNav">
+    <div class="section scrollspy" id="afterNav">
       <div class="row container"></div>
       <h2 class="lobster">A propos de moi</h2>
       <p id="white">
@@ -54,7 +53,7 @@
         dans un DUT Informatique. Titulaire de ce diplôme depuis 2015, je me suis engagé dans une License Professionnelle, spécialité Services Informatiques et Logiciels,
         en alternance avec le groupe La Poste.
       </p>
-      <p id="parcours"></p>
+      <p id="parcours" class="scrollspy"></p>
     </div>
     <!-- <div class="parallax-container">
       <div class="parallax">
@@ -99,12 +98,12 @@
           </div>
           <!-- cd-timeline-img -->
           <div class="cd-timeline-content">
-            <h3 class="ubuntu">Stagiaire</h3>
+            <h3 class="ubuntu">Stage au groupe La Poste</h3>
             <p>Stage d'application et de fin de DUT Informatique réalisé au sein du groupe La Poste (DSI Centrale de Nantes).
-              <br>Ma mission était d'étendre les fonctionnalités d'une application de suivi de mises en productions. Les principales fonctionnalités
+              <br>Ma mission était d'étendre les fonctionnalités d'une application de suivi de mises en productions. <br/>Les principales fonctionnalités
               que j'ai implémenté étant la possibilité de supprimer une mise en production recensée dans cette application (de façon logique et non
               physique pour éviter les dangers), ainsi que la possibilité de comparer les bases de données de développement et de production pour chaque
-              application. Ce qui permet de comparer les différentes bases de données d'une application afin d'alerter si des tables ou des colonnes
+              application. <br/>Ce qui permet de comparer les différentes bases de données d'une application afin d'alerter si des tables ou des colonnes
               ont été rajoutées ou supprimées, avant toute mise en production.
             </p>
             <span class="cd-date">13 Avril - 19 Juin 2015</span>
@@ -143,82 +142,122 @@
         </div>
         <!-- cd-timeline-block -->
       </section>
+      <p id="competences" class="scrollspy"></p>
     </div>
+
     <div class="section" id="afterNav">
       <h2 class="lobster">Mes Compétences</h2>
       <br><br>
       <div class="row">
         <div class="col l6 m12">
           <h5 class="lobster competences">En informatique...</h5>
-          <ul class="collection">
-            <li class="collection-item avatar">
-              <i class="material-icons circle red">polymer</i>
-              <span class="title">Développement Logiciel</span>
-              <p>First Line <br>
-                Second Line
-              </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+          <ul class="collapsible popout">
+            <li>
+              <div class="collapsible-header">
+                <img src="img/icons/code.svg" alt="" class="circle red competences-petite-image"> 
+                <span class="title">Développement Logiciel</span>
+              </div>
+              <div class="collapsible-body">
+                <p>
+                  <strong>Bases de données : </strong> Oracle SQL Developper <br/>
+                  <strong>Modélisation: </strong> UML <br/>
+                  <strong>Programmation Objet:</strong> <br/>
+                   &nbsp;&nbsp;&nbsp;&nbsp;Java <br/>
+                   &nbsp;&nbsp;&nbsp;&nbsp;J2EE (Avec les frameworks Spring, Hibernate et Neo4j) <br/>
+                  <strong>Programmation Procédurale :</strong> C <br/>
+                  <strong>Programmation Fonctionnelle:</strong> <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Python <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;notions de Haskell
+                </p>            
+              </div>
             </li>
-            <li class="collection-item avatar">
-              <i class="material-icons circle green">code</i>
-              <span class="title">Développement WEB</span>
-              <p>First Line <br>
-                Second Line
-              </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+            <li>
+              <div class="collapsible-header">
+                <img src="img/icons/html.svg" alt="" class="circle competences-petite-image"> 
+                <span class="title">Développement WEB</span> 
+              </div>
+              <div class="collapsible-body">
+                <p>
+                  HTML 5, CSS3 <br/>
+                  <strong>Coté client :</strong> <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Javascript <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;JQuery <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;AjAX <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;JSTL <br/>
+                  <strong>Coté Serveur :</strong> <br/>  
+                    &nbsp;&nbsp;&nbsp;&nbsp;PHP / MySQL / MyAdmin <br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Node.js
+                </p>
+              </div>
             </li>
-            <li class="collection-item avatar">
-              <img src="img/icons/ic_android_green_24px.svg" alt="Android" class="circle">
-              <span class="title">Développement Mobile</span>
-              <p>First Line <br>
-                Second Line
-              </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+            <li>
+              <div class="collapsible-header">
+                <img src="img/icons/ic_android_green_24px.svg" alt="Android" class="circle competences-petite-image"> 
+                <span class="title">Développement Mobile</span>
+              </div>
+              <div class="collapsible-body">
+                <p>
+                  <strong>Applications Android</strong>
+                </p>
+              </div>
             </li>
-            <li class="collection-item avatar">
-              <i class="material-icons circle blue-grey">desktop_windows</i>
-              <span class="title">Systèmes d'exploitation</span>
-              <p>First Line <br>
-                Second Line
+            <li>
+              <div class="collapsible-header">
+                <img src="img/icons/os.png" alt="" class="competences-petite-image"> 
+                <span class="title">Systèmes d'exploitation</span>
+              </div>
+              <div class="collapsible-body">
+              <p>
+                <strong>Linux</strong> <br/>
+                <strong>Shell / Bash / sh</strong> <br/>
+                <strong>Programmation de bas niveau: </strong> Assembleur                
               </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+              </div>
             </li>
           </ul>
         </div>
         <div class="col l6 m12">
           <h5 class="lobster competences">Compétences diverses...</h5>
-          <ul class="collection">
-            <li class="collection-item avatar">
-              <i class="material-icons circle orange">business</i>
-              <span class="title">Gestion des Organisations</span>
-              <p>Gestion des organisations<br>
-                Second Line
-              </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+          <ul class="collapsible popout">
+            <li>
+              <div class="collapsible-header">
+                <img src="img/icons/gestion.svg" alt="" class="circle competences-petite-image"> 
+                <span class="title">Gestion des Organisations</span>
+              </div> 
+              <div class="collapsible-body">
+                <p>
+                  <strong>Bilans, comptes de résuktat</strong> <br/>
+                  <strong>Jeux d'entreprises: </strong> gestion des comptes, de la production, des effectis, des salairs
+                  et de la concurrence (entre équipes)
+                </p>
+              </div> 
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <img src="img/icons/droit.svg" alt="" class="circle competences-petite-image">
+                <span class="title">Droit des Technologies de l'Information et de la Communication</span>
+              </div>  
+              <div class="collapsible-body">
+                <p>Droit lié aux brevets, à la CNIL, et aux licenses logicielles</p>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible-header">
+                <img src="img/icons/economie.svg" alt="" class="competences-petite-image">
+                <span class="title">Économie</span>
+              </div>  
             </li>
             <li class="collection-item avatar">
-              <i class="material-icons circle">copyright</i>
-              <span class="title">Droit des Technologies de l'Information et de la Communication</span>
-              <p>First Line <br>
-                Second Line
-              </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
-            </li>
-            <li class="collection-item avatar">
-              <i class="material-icons circle green">attach_money</i>
-              <span class="title">Économie</span>
-              <p>First Line <br>
-                Second Line
-              </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
-            </li>
-            <li class="collection-item avatar">
-              <i class="material-icons circle blue">language</i>
-              <span class="title">Langues</span>
-              <p>First Line <br>
-                Second Line
-              </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+              <div class="collapsible-header">
+                <img src="img/icons/langue.svg" alt="" class="competences-petite-image">
+                <span class="title">Langues</span>
+              </div>
+              <div class="collapsible-body">
+                <p>
+                  <strong>Anglais : </strong> Capable de tenir une conversation, de lire et d'écrire un document technique. <br/>
+                  <strong>Espagnol: </strong> Capable de lire un document simple, de tenir une conversation simple
+                </p>
+              </div>  
             </li>
           </ul>
         </div>
@@ -230,6 +269,7 @@
       </div>
     </div>
     <div class="section" id="afterNav">
+      <p id="contact" class="scrollspy"></p>
       <h2 class="lobster">Me contacter</h2>
       <br/>
       <div class="card" id="me-contacter">
@@ -238,35 +278,27 @@
           <p>Cliquez sur l'image pour rejoindre mon réseau</p>
         </div>
         <div class="card-image waves-effect waves-block waves-red">
-          <img class="activator" src="img/usb.png">
+          <img class="activator" src="img/usb.png" alt="">
         </div>
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">Rejoignez-moi !<i class="material-icons right">close</i></span>
           <div>
           <ul class="collection" id="ul-contact">
             <li class="collection-item avatar">
-              <img src="img/icons/facebook.svg" class="icones">
-              <span class="title">Développement Logiciel</span>
-              <p>First Line <br>
-                Second Line
-              </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+              <img src="img/gmail.png" alt="gmail" class="petite-icone">
+              <span class="title">thyb44@gmail.com</span>
             </li>
             <li class="collection-item avatar">
-              <img src="img/icons/linkedin.svg" class="icones">
-              <span class="title">Développement WEB</span>
-              <p>First Line <br>
-                Second Line
-              </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+              <img src="img/icons/linkedin.svg" alt="linkedin" class="icones">
+              <span class="title">https://fr.linkedin.com/in/thibault-osmont-5812938b</span>
             </li>
             <li class="collection-item avatar">
-              <img src="img/gmail.png" alt="Android" class="petite-icone">
-              <span class="title">Développement Mobile</span>
-              <p>First Line <br>
-                Second Line
-              </p>
-              <a href="#!" class="secondary-content"><i class="material-icons star">grade</i></a>
+              <img src="img/icons/github.svg" alt="github" class="petite-icone">
+              <span class="title">https://github.com/ThibaultOsmont</span>
+            </li>
+            <li class="collection-item avatar">
+              <img src="img/icons/facebook.svg" alt="facebook" class="icones">
+              <span class="title">https://www.facebook.com/people/Thibault-Osmont/100008397697309</span>
             </li>
           </ul>
         </div>
@@ -298,6 +330,15 @@
             $(".row:first-child").css("padding-top", "0");
           }
         });
+
+       /* $('a[href^="#"]').click(function(){
+            var id = $(this).attr("href");
+            var offset = $(id).offset().top;
+            $('html, body').animate({scrollTop: offset}, 'slow');
+            return false;
+        });*/
+
+        $('.scrollspy').scrollSpy();
       });
     </script>
   </body>
