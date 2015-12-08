@@ -83,12 +83,42 @@ footer.page-footer {
   background-color: #191919;
 }
 
+.navFixedTop {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;  
+  top: 0;
+  padding-bottom: 4.5rem;
+}
+
 li a{
   color: white;
 }
 
+.btn-large img {
+  width: inherit;
+}  
+
+.btn-floating:not(.btn-large) img {
+  width: 27px;
+  margin-right: 4.7px;
+  margin-top: 4px;
+}  
+
 #red {
   background-color: red;
+}
+
+.red {
+    background-color: #CC0E00 !important;
+}
+
+.blue {
+  background-color: #001FCC !important;
+}
+
+.green {
+  background-color: #4dc036 !important;
 }
 
 #greenAndro {
@@ -101,13 +131,6 @@ li a{
   color: #3B7D9E;
 }
 
-.navFixedTop {
-  position: fixed;
-  width: 100%;
-  z-index: 9999;  
-  top: 0;
-  padding-bottom: 4.5rem;
-}
 
 #avatar {
   width: 200px;
@@ -124,7 +147,8 @@ li a{
 #afterNav {
   width: 90%;
   padding-left: 5%;
-  background-color: #263238 ;
+  background-color: #1C2126;
+  /*background-color: #263238 ; BLEU-GRIS*/
  /* background-color: #2A6CA7; BLEU*/
 }
 
@@ -134,7 +158,8 @@ li a{
 
 body {
   /*background-color: #2A6CA7; BLEU*/
-  background-color: #263238 ;
+  /*background-color: #263238 ; BLEU-GRIS*/
+  background-color: #1C2126;
 }
 
 .littleIcon {
@@ -148,6 +173,7 @@ body {
 
 .competences {
   text-align: center;
+  color: white;
 }
 
 #vertical-container {
@@ -171,6 +197,18 @@ body {
 
 .competences-petite-image ~ .title {
   padding-left: 35px;
+}
+
+.collapsible-header {
+  line-height: 4em !important;
+}
+
+#first-collapsible {
+  border-radius: 4px 4px 0 0;
+}
+
+#last-collapsible {
+  border-radius: 0 0 4px 4px;
 }
 
 .collapsible-body {

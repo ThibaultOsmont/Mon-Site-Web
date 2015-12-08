@@ -31,7 +31,7 @@
         </div>
         <div class="parallax"><img src="img/background_it_1.png"></div>
       </div>
-      <!-- <div id="navbar">
+      <div id="navbar">
         <nav class="navBlue">
           <div class="">
             <ul class="left hide-on-med-and-down">
@@ -42,31 +42,11 @@
             </ul>
           </div>
         </nav>
-      </div> -->
-
-  <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large waves-effect waves-green red"  href="#index-banner">
-      <img src="img/icons/ic_keyboard_arrow_up_white_24px.svg" alt="haut de page">
-    </a>
-    <ul>
-      <li><a class="btn-floating tooltipped waves-effect waves-green blue" data-tooltip="A propos de moi" data-delay="20" data-position="top" href="#apropos">
-        <img src="img/icons/ic_person_white_24px.svg" alt="apropos">
-      </a></li>
-      <li><a class="btn-floating tooltipped waves-effect waves-black green" data-tooltip="Mon Expérience" data-delay="20" data-position="top" href="#experience">
-        <img src="img/icons/ic_business_center_white_24px.svg" alt="experience">
-      </a></li>
-      <li><a class="btn-floating tooltipped waves-effect waves-black orange" data-tooltip="Mes Compétences" data-delay="20" data-position="top" href="#competences">
-        <img src="img/icons/ic_devices_white_24px.svg" alt="competences">
-      </a></li>
-      <li><a class="btn-floating tooltipped waves-effect waves-black grey" data-tooltip="Me Contacter" data-delay="20" data-position="top" href="#contact">
-        <img src="img/icons/ic_mail_white_24px.svg" alt="contact">
-      </a></li>
-    </ul>
-  </div>
+      </div>
     </header>
     <div class="section scrollspy" id="afterNav">
       <div class="row container"></div>
-      <h2 class="lobster" id="apropos">A propos de moi</h2>
+      <h2 class="lobster">A propos de moi</h2>
       <p id="white">
         Initialement intéressé par les sciences économiques et sociales, je suis titulaire d'un bac dans cette spécialité depuis 2013.
         C'est durant cette année que me vient une passion pour l'informatique et le numérique, c'est pourquoi je me suis engagé, avec succès,
@@ -81,7 +61,7 @@
       </div>
       </div> -->
     <div class="section" id="vertical-container">
-      <h2 class="lobster" id="experience">Mon Expérience</h2>
+      <h2 class="lobster">Mon Expérience</h2>
       <section id="cd-timeline" class="cd-container">
         <div class="cd-timeline-block">
           <div class="cd-timeline-img cd-picture">
@@ -162,17 +142,18 @@
         </div>
         <!-- cd-timeline-block -->
       </section>
+      <p id="competences" class="scrollspy"></p>
     </div>
 
     <div class="section" id="afterNav">
-      <h2 class="lobster" id="competences">Mes Compétences</h2>
+      <h2 class="lobster">Mes Compétences</h2>
       <br><br>
       <div class="row">
         <div class="col l6 m12">
           <h5 class="lobster competences">En informatique...</h5>
           <ul class="collapsible popout">
             <li>
-              <div class="collapsible-header" id="first-collapsible">
+              <div class="collapsible-header">
                 <img src="img/icons/code.svg" alt="" class="circle red competences-petite-image"> 
                 <span class="title">Développement Logiciel</span>
               </div>
@@ -222,7 +203,7 @@
               </div>
             </li>
             <li>
-              <div class="collapsible-header" id="last-collapsible">
+              <div class="collapsible-header">
                 <img src="img/icons/os.png" alt="" class="competences-petite-image"> 
                 <span class="title">Systèmes d'exploitation</span>
               </div>
@@ -240,7 +221,7 @@
           <h5 class="lobster competences">Compétences diverses...</h5>
           <ul class="collapsible popout">
             <li>
-              <div class="collapsible-header" id="first-collapsible">
+              <div class="collapsible-header">
                 <img src="img/icons/gestion.svg" alt="" class="circle competences-petite-image"> 
                 <span class="title">Gestion des Organisations</span>
               </div> 
@@ -268,7 +249,7 @@
               </div>  
             </li>
             <li class="collection-item avatar">
-              <div class="collapsible-header" id="last-collapsible">
+              <div class="collapsible-header">
                 <img src="img/icons/langue.svg" alt="" class="competences-petite-image">
                 <span class="title">Langues</span>
               </div>
@@ -289,7 +270,8 @@
       </div>
     </div>
     <div class="section" id="afterNav">
-      <h2 class="lobster" id="contact">Me contacter</h2>
+      <p id="contact" class="scrollspy"></p>
+      <h2 class="lobster">Me contacter</h2>
       <br/>
       <div class="card" id="me-contacter">
          <div class="card-content">
@@ -339,7 +321,7 @@
           $(this).addClass("active");
         });
       
-        /*$(window).scroll(function() {
+        $(window).scroll(function() {
           if($(this).scrollTop() > 431) {
             $("#navbar").attr("class", "navFixedTop");
             $(".row:first-child").css("padding-top", "4.5rem");
@@ -348,13 +330,13 @@
             $("#navbar").removeClass("navFixedTop");
             $(".row:first-child").css("padding-top", "0");
           }
-        });*/
-       $('a[href^="#"]').click(function(){
+        });
+       /* $('a[href^="#"]').click(function(){
             var id = $(this).attr("href");
             var offset = $(id).offset().top;
             $('html, body').animate({scrollTop: offset}, 'slow');
             return false;
-        });
+        });*/
 
         $('.scrollspy').scrollSpy();
       });
