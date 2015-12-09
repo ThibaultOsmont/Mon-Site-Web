@@ -9,8 +9,8 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
+/*nav ul a,*/
+/*nav .brand-logo {
   transition: background 0.5s;
 }
 
@@ -21,7 +21,7 @@ nav ul a:hover {
 
 nav ul a:focus {
   background-color: #263238;
-}
+}*/
 
 p {
   line-height: 2rem;
@@ -30,9 +30,9 @@ p {
   text-align: justify;
 }
 
-.button-collapse {
+/*.button-collapse {
   color: #26a69a;
-}
+}*/
 
 .parallax-container {
   min-height: 380px;
@@ -66,12 +66,12 @@ p {
   }
 }
 
-.icon-block {
+/*.icon-block {
   padding: 0 15px;
 }
 .icon-block .material-icons {
   font-size: inherit;
-}
+}*/
 
 footer.page-footer {
   margin: 0;
@@ -79,17 +79,17 @@ footer.page-footer {
 
 /*MINE*/
 
-.navBlue {
+/*.navBlue {
   background-color: #191919;
-}
+}*/
 
-.navFixedTop {
+/*.navFixedTop {
   position: fixed;
   width: 100%;
   z-index: 9999;  
   top: 0;
   padding-bottom: 4.5rem;
-}
+}*/
 
 li a{
   color: white;
@@ -105,9 +105,9 @@ li a{
   margin-top: 4px;
 }  
 
-#red {
+/*#red {
   background-color: red;
-}
+}*/
 
 .red {
     background-color: #CC0E00 !important;
@@ -121,16 +121,11 @@ li a{
   background-color: #4dc036 !important;
 }
 
-#greenAndro {
+/*#greenAndro {
   color: #98CB00;
   font-size: 25px;
   background-color: white;
-}
-
-.star {
-  color: #3B7D9E;
-}
-
+}*/
 
 #avatar {
   width: 200px;
@@ -144,7 +139,7 @@ li a{
   font-family: 'Ubuntu', sans-serif;
 }
 
-#afterNav {
+.afterNav {
   width: 90%;
   padding-left: 5%;
   background-color: #1C2126;
@@ -152,7 +147,7 @@ li a{
  /* background-color: #2A6CA7; BLEU*/
 }
 
-#afterNav h2, #white {
+.afterNav h2, #white {
   color: white;
 }
 
@@ -162,21 +157,18 @@ body {
   background-color: #1C2126;
 }
 
-.littleIcon {
-  width: 40px;
-  padding-top: 5px;
-}
-
-#css3 {
-  width: 47px;
-}
-
 .competences {
   text-align: center;
   color: white;
 }
 
-#vertical-container {
+.vertical-container-chrome {
+  background-image: url(../img/background_it_2-blur.jpeg);
+  background-position: static;
+  background-size: cover;
+}
+
+.vertical-container-others {
   background-image: url(../img/background_it_2-blur.jpeg);
   background-attachment: fixed;
 }
@@ -192,7 +184,7 @@ body {
   overflow: hidden;
   display: inline-block;
   margin-left: -12px;
-  margin-top: 2px;
+  margin-top: 9px;
 }
 
 .competences-petite-image ~ .title {
@@ -203,12 +195,16 @@ body {
   line-height: 4em !important;
 }
 
-#first-collapsible {
+.first-collapsible {
   border-radius: 4px 4px 0 0;
 }
 
-#last-collapsible {
+.last-collapsible {
   border-radius: 0 0 4px 4px;
+}
+
+.last-collapsible.active {
+  border-radius: 0;
 }
 
 .collapsible-body {
