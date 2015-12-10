@@ -23,6 +23,11 @@ nav ul a:focus {
   background-color: #263238;
 }*/
 
+#down img {
+  padding-top: 50px;
+  width: 120px;
+}
+
 p {
   line-height: 2rem;
   font-family: 'Ubuntu', sans-serif;
@@ -37,11 +42,14 @@ p {
 .parallax-container {
   min-height: 380px;
   line-height: 0;
-  height: auto;
   color: rgba(255,255,255,.9);
 }
 .parallax-container .section {
   width: 100%;
+}
+
+#index-banner {
+  height: 100vh;
 }
 
 .parallax-container:not(#index-banner) {
