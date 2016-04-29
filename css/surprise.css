@@ -1,0 +1,103 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,200,300,400);
+
+#dessus {
+    height:110px;
+    background-color: black;
+}
+
+#centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle {
+    position: relative;
+    z-index: 90;
+}
+
+.deck {
+    width: 100%;
+    min-height: 100vh;
+    height: 1100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 1;
+}
+
+
+.deck:before, .deck:after {
+    content: '';
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    background: #283593;
+    transition: transform 1s ease;
+}
+.deck:before {
+    top: 0;
+}
+.deck:after {
+    bottom: 0;
+}
+.deck.is-over:before {
+    -webkit-transform: translate3d(-100vw, 0, 0);
+    transform: translate3d(-100vw, 0, 0);
+}
+.deck.is-over:after {
+    -webkit-transform: translate3d(100vw, 0, 0);
+    transform: translate3d(100vw, 0, 0);
+}
+
+.text {
+    width: 7em;
+    height: 3em;
+    z-index: 20;
+    font-size: 4rem;
+    line-height: 1em;
+    font-weight: 700;
+    color: #fff;
+}
+.text:before, .text:after {
+    content: attr(title);
+    display: block;
+    overflow: hidden;
+    transition: transform 1s ease;
+}
+.text:before {
+    height: 1.5em;
+    position: relative;
+    z-index: 20;
+}
+.is-over .text:before {
+    -webkit-transform: translate3d(-100vw, 0, 0);
+    transform: translate3d(-100vw, 0, 0);
+}
+.text:after {
+    width: inherit;
+    padding-bottom: .09em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    vertical-align: bottom;
+    clip: rect(1.5em auto auto auto);
+}
+.is-over .text:after {
+    -webkit-transform: translate3d(100vw, 0, 0);
+    transform: translate3d(100vw, 0, 0);
+}
+
+.deck .is-over {
+    opacity: 0.2;
+    -webkit-transition: opacity 0.5s ease-in-out;/* transition pour Chrome et Safari */
+    -moz-transition: opacity 0.5s ease-in-out;/* transition pour Firefox */
+    -o-transition: opacity 0.5s ease-in-out;/* transition pour Opéra */
+    transition: opacity 0.5s ease-in-out; /* on écrit cette ligne à la fin de façon à ce que ce soit elle qui soit prise en compte lorsque l'attribut transition sera pris en compte par tous les navigateurs */
+}
