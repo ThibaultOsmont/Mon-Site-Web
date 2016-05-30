@@ -1,351 +1,362 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-      <title>Thibault Osmont</title>
-      <!-- CSS  -->
-      <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
-      <link rel="stylesheet" href="css/material-icons.css">
-      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen"/>
-      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen"/>
-      <!-- Vertical timeline -->
-      <link rel="stylesheet" type="text/css" href="css/vertical-timeline.css">
-      <!--  <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
-   </head>
-   <body>
-      <header>
-         <div id="index-banner" class="parallax-container">
-            <div class="section "> <!-- no-pad-bot -->
-               <div class="container">
-                 <!--  <br><br> -->
-                  <h1 class="header center light lobster">Thibault Osmont</h1>
-                  <div class="row center">
-                     <img src="img/icons/java.svg" alt="avatar" class="circle responsive-img" id="avatar">
-                  </div>
-                  <div class="row center">
-                    <h5 class="header col s12 light ubuntu">Développeur Informatique</h5>
-                    <br/>
-                    <a href="#apropos" id="down">
-                        <img src="img/icons/ic_keyboard_arrow_down_black_24px.svg" align="Scroll down">
-                    </a>
-                  </div>
-                  <!-- <br><br> -->
-               </div>
-            </div>
-            <div class="parallax"><img src="img/background_it_1.png" alt="parallax background"></div>
-         </div>
-         <!-- <div id="navbar">
-            <nav class="navBlue">
-              <div class="">
-                <ul class="left hide-on-med-and-down">
-                  <li><a href="#apropos">A propos</a></li>
-                  <li><a href="#parcours">Parcours</a></li>
-                  <li><a href="#competences">Compétences</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-            </nav>
-            </div> -->
-         <!-- Boutons de navigation -->   
-         <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
-            <a class="btn-floating btn-large waves-effect waves-green red"  href="#index-banner" id="hautdepage">
-            <img src="img/icons/ic_keyboard_arrow_up_white_24px.svg" alt="haut de page">
-            </a>
-            <ul>
-               <li><a class="btn-floating tooltipped waves-effect waves-green blue" data-tooltip="A propos de moi" data-delay="20" data-position="top" href="#apropos">
-                  <img src="img/icons/ic_person_white_24px.svg" alt="apropos">
-                  </a>
-               </li>
-               <li><a class="btn-floating tooltipped waves-effect waves-black green" data-tooltip="Mon Expérience" data-delay="20" data-position="top" href="#experience">
-                  <img src="img/icons/ic_business_center_white_24px.svg" alt="experience">
-                  </a>
-               </li>
-               <li><a class="btn-floating tooltipped waves-effect waves-black orange" data-tooltip="Mes Compétences" data-delay="20" data-position="top" href="#competences">
-                  <img src="img/icons/ic_devices_white_24px.svg" alt="competences">
-                  </a>
-               </li>
-               <li><a class="btn-floating tooltipped waves-effect waves-black grey" data-tooltip="Me Contacter" data-delay="20" data-position="top" href="#contact">
-                  <img src="img/icons/ic_mail_white_24px.svg" alt="contact">
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </header>
-      <div class="section scrollspy afterNav" id="apropos">
-         <div class="row container"></div>
-         <h2 class="lobster">A propos de moi</h2>
-         <p id="white">
-            Initialement intéressé par les sciences économiques et sociales, je suis titulaire d'un bac dans cette spécialité depuis 2013.
-            C'est durant cette année que me vint une passion pour l'informatique et le numérique, c'est pourquoi je me suis engagé, avec succès,
-            dans un DUT Informatique. Titulaire de ce diplôme depuis 2015, je me suis engagé dans une Licence Professionnelle, spécialité Services Informatiques et Logiciels,
-            en alternance avec le groupe La Poste.
-         </p>
-         <p id="parcours" class="scrollspy"></p>
-      </div>
-      <!-- <div class="parallax-container">
-         <div class="parallax">
-           <img src="img/background_it_2.jpeg" alt="Au coeur du numérique">
-         </div>
-         </div> -->
-      <div class="section" id="vertical-container">
-         <h2 class="lobster" id="experience">Mon Expérience</h2>
-         <section id="cd-timeline" class="cd-container">
-            <div class="cd-timeline-block">
-               <div class="cd-timeline-img cd-picture">
-                  <img src="img/icons/ic_school_white_24px.svg" alt="Licence Pro">
-               </div>
-               <!-- cd-timeline-img -->
-               <div class="cd-timeline-content">
-                  <h3 class="ubuntu">Licence Professionnelle</h3>
-                  <p class="ubuntu">Mention Services Informatiques et Logiciels, spécialité Développement d'Applications Réparties.
-                     <br>IUT de Nantes
-                     <br>En alternance avec le Groupe La Poste (DSI Centrale de Nantes).
-                  </p>
-                  <span class="cd-date">2015 - 2016</span>
-               </div>
-               <!-- cd-timeline-content -->
-            </div>
-            <!-- cd-timeline-block -->
-            <div class="cd-timeline-block droite">
-               <div class="cd-timeline-img blue">
-                  <img src="img/icons/ic_work_white_24px.svg" alt="Job d'été 2015">
-               </div>
-               <!-- cd-timeline-img -->
-               <div class="cd-timeline-content">
-                  <h3 class="ubuntu">Étancheur</h3>
-                  <p>Travail d'été pour la société Cofely Axima, du groupe Engie, sur le chantier de la Direction Générale de l'Armement à Rennes.</p>
-                  <span class="cd-date">29 Juin - 14 Août 2015</span>
-               </div>
-               <!-- cd-timeline-content -->
-            </div>
-            <!-- cd-timeline-block -->
-            <div class="cd-timeline-block droite">
-               <div class="cd-timeline-img blue">
-                  <img src="img/icons/ic_work_white_24px.svg" alt="Job d'été 2015">
-               </div>
-               <!-- cd-timeline-img -->
-               <div class="cd-timeline-content">
-                  <h3 class="ubuntu">Stage au groupe La Poste</h3>
-                  <p>Stage d'application et de fin de DUT Informatique réalisé au sein du groupe La Poste (DSI Centrale de Nantes).
-                     <br>Ma mission était d'étendre les fonctionnalités d'une application de suivi de mises en productions. <br/>Les principales fonctionnalités
-                     que j'ai implémenté étant la possibilité de supprimer une mise en production recensée dans cette application (de façon logique et non
-                     physique pour éviter les dangers), ainsi que la possibilité de comparer les bases de données de développement et de production pour chaque
-                     application. <br/>Ce qui permet de comparer les différentes bases de données d'une application afin d'alerter si des tables ou des colonnes
-                     ont été rajoutées ou supprimées, avant toute mise en production.
-                  </p>
-                  <span class="cd-date">13 Avril - 19 Juin 2015</span>
-               </div>
-               <!-- cd-timeline-content -->
-            </div>
-            <!-- cd-timeline-block -->
-            <div class="cd-timeline-block">
-               <div class="cd-timeline-img cd-picture">
-                  <img src="img/icons/ic_school_white_24px.svg" alt="DUT">
-               </div>
-               <!-- cd-timeline-img -->
-               <div class="cd-timeline-content">
-                  <h3 class="ubuntu">Diplôme Universitaire de Technologie</h3>
-                  <p class="ubuntu">Mention Informatique.
-                     <br>IUT de Nantes
-                  </p>
-                  <span class="cd-date">2013 - 2015</span>
-               </div>
-               <!-- cd-timeline-content -->
-            </div>
-            <!-- cd-timeline-block -->
-            <div class="cd-timeline-block">
-               <div class="cd-timeline-img cd-picture">
-                  <img src="img/icons/ic_school_white_24px.svg" alt="BAC">
-               </div>
-               <!-- cd-timeline-img -->
-               <div class="cd-timeline-content">
-                  <h3 class="ubuntu">Baccalauréat Économique et Social</h3>
-                  <p class="ubuntu">Mention Assez Bien.
-                     <br>Lycée de La Herdrie (Nantes)
-                  </p>
-                  <span class="cd-date">2013</span>
-               </div>
-               <!-- cd-timeline-content -->
-            </div>
-            <!-- cd-timeline-block -->
-         </section>
-      </div>
-      <div class="section afterNav">
-         <h2 class="lobster" id="competences">Mes Compétences</h2>
-         <br><br>
-         <div class="row">
-            <div class="col l6 m12">
-               <h5 class="lobster competences">En informatique...</h5>
-               <ul class="collapsible popout">
-                  <li>
-                     <div class="collapsible-header first-collapsible">
-                        <img src="img/icons/code.svg" alt="" class="circle red competences-petite-image"> 
-                        <span class="title">Développement Logiciel</span>
-                        <a href="#!" class="secondary-content"><img src="img/icons/ic_add_black_24px.svg" alt="cliquez !"></a>
-                     </div>
-                     <div class="collapsible-body">
-                        <p>
-                           <strong>Bases de données : </strong> Oracle SQL Developper <br/>
-                           <strong>Modélisation: </strong> UML <br/>
-                           <strong>Programmation Objet:</strong> <br/>
-                           &nbsp;&nbsp;&nbsp;&nbsp;Java <br/>
-                           &nbsp;&nbsp;&nbsp;&nbsp;J2EE (Avec les frameworks Spring, Hibernate, Neo4j et Thymeleaf) <br/>
-                           <strong>Programmation Procédurale :</strong> C <br/>
-                           <strong>Programmation Fonctionnelle:</strong> <br/>
-                           &nbsp;&nbsp;&nbsp;&nbsp;Python <br/>
-                           &nbsp;&nbsp;&nbsp;&nbsp;notions de Haskell
-                        </p>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="collapsible-header">
-                        <img src="img/icons/html5.svg" alt="" class="circle competences-petite-image"> 
-                        <span class="title">Développement WEB</span>
-                        <a href="#!" class="secondary-content"><img src="img/icons/ic_add_black_24px.svg" alt="cliquez !"></a> 
-                     </div>
-                     <div class="collapsible-body">
-                        <p>
-                           HTML 5, CSS3 <br/>
-                           <strong>Coté client :</strong> <br/>
-                           &nbsp;&nbsp;&nbsp;&nbsp;Javascript / ECMAScript 6 <br/>
-                           &nbsp;&nbsp;&nbsp;&nbsp;JQuery <br/>
-                           &nbsp;&nbsp;&nbsp;&nbsp;AjAX <br/>
-                           &nbsp;&nbsp;&nbsp;&nbsp;REACT Js <br/>
-                           &nbsp;&nbsp;&nbsp;&nbsp;JSTL <br/>
-                           <strong>Coté Serveur :</strong> <br/>  
-                           &nbsp;&nbsp;&nbsp;&nbsp;PHP / MySQL / MyAdmin <br/>
-                           &nbsp;&nbsp;&nbsp;&nbsp;Node.js
-                        </p>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="collapsible-header">
-                        <img src="img/icons/ic_android_green_24px.svg" alt="Android" class="circle competences-petite-image"> 
-                        <span class="title">Développement Mobile</span>
-                        <a href="#!" class="secondary-content"><img src="img/icons/ic_add_black_24px.svg" alt="cliquez !"></a>
-                     </div>
-                     <div class="collapsible-body">
-                        <p>
-                           <strong>Applications Android</strong>
-                        </p>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="collapsible-header last-collapsible">
-                        <img src="img/icons/os.png" alt="" class="competences-petite-image"> 
-                        <span class="title">Systèmes d'exploitation</span>
-                        <a href="#!" class="secondary-content"><img src="img/icons/ic_add_black_24px.svg" alt="cliquez !"></a>
-                     </div>
-                     <div class="collapsible-body">
-                        <p>
-                           <strong>Linux</strong> <br/>
-                           <strong>Shell / Bash / sh</strong> <br/>
-                           <strong>Programmation de bas niveau: </strong> Assembleur                
-                        </p>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-            <div class="col l6 m12">
-               <h5 class="lobster competences">Compétences diverses...</h5>
-               <ul class="collapsible popout">
-                  <li>
-                     <div class="collapsible-header first-collapsible">
-                        <img src="img/icons/gestion.svg" alt="" class="circle competences-petite-image"> 
-                        <span class="title">Gestion des Organisations</span>
-                        <a href="#!" class="secondary-content"><img src="img/icons/ic_add_black_24px.svg" alt="cliquez !"></a>
-                     </div>
-                     <div class="collapsible-body">
-                        <p>
-                           <strong>Bilans, comptes de résuktat</strong> <br/>
-                           <strong>Jeux d'entreprises: </strong> gestion des comptes, de la production, des effectis, des salairs
-                           et de la con;currence (entre équipes)
-                        </p>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="collapsible-header">
-                        <img src="img/icons/droit.svg" alt="" class="circle competences-petite-image">
-                        <span class="title">Droit des Technologies de l'Information et de la Communication</span>
-                        <a href="#!" class="secondary-content"><img src="img/icons/ic_add_black_24px.svg" alt="cliquez !"></a>
-                     </div>
-                     <div class="collapsible-body">
-                        <p>Droit lié aux brevets, à la CNIL, et aux licences logicielles</p>
-                     </div>
-                  </li>
-                  <li>
-                     <div class="collapsible-header">
-                        <img src="img/icons/economie.svg" alt="" class="competences-petite-image">
-                        <span class="title">Économie</span>
-                        <a href="#!" class="secondary-content"><img src="img/icons/ic_add_black_24px.svg" alt="cliquez !"></a>
-                     </div>
-                  </li>
-                  <li class="collection-item avatar">
-                     <div class="collapsible-header last-collapsible">
-                        <img src="img/icons/langue.svg" alt="" class="competences-petite-image">
-                        <span class="title">Langues</span>
-                        <a href="#!" class="secondary-content"><img src="img/icons/ic_add_black_24px.svg" alt="cliquez !"></a>
-                     </div>
-                     <div class="collapsible-body">
-                        <p>
-                           <strong>Anglais : </strong> Capable de tenir une conversation, de lire et d'écrire un document technique. <br/>
-                           <strong>Espagnol: </strong> Capable de lire un document simple, de tenir une conversation simple
-                        </p>
-                     </div>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </div>
-      <div class="parallax-container">
-         <div class="parallax">
-            <img src="img/bg_andro-1.png" alt="Au coeur d'Android"/>
-         </div>
-      </div>
-      <div class="section afterNav">
-         <h2 class="lobster" id="contact">Me contacter</h2>
-         <br/>
-         <div class="card" id="me-contacter">
-            <div class="card-content">
-               <span class="card-title activator grey-text text-darken-4">Rejoignez moi ! <img src="img/icons/ic_more_vert_black_24px.svg" alt="déveloper" class="secondary-content"></span>
-               <p>Cliquez sur l'image pour rejoindre mon réseau</p>
-            </div>
-            <div class="card-image waves-effect waves-block waves-red">
-               <img class="activator" src="img/usb.png" alt="">
-            </div>
-            <div class="card-reveal">
-               <span class="card-title grey-text text-darken-4">Rejoignez-moi !<img src="img/icons/ic_close_black_24px.svg" alt="fermer" class="secondary-content"></span>
-               <div>
-                  <ul class="collection" id="ul-contact">
-                     <li class="collection-item avatar">
-                        <img src="img/gmail.png" alt="gmail" class="petite-icone">
-                        <span class="title">thyb44@gmail.com</span>
-                     </li>
-                     <li class="collection-item avatar">
-                        <img src="img/icons/linkedin.svg" alt="linkedin" class="icones">
-                        <span class="title">https://fr.linkedin.com/in/thibault-osmont-5812938b</span>
-                     </li>
-                     <li class="collection-item avatar">
-                        <img src="img/icons/github.svg" alt="github" class="petite-icone">
-                        <span class="title">https://github.com/ThibaultOsmont</span>
-                     </li>
-                     <li class="collection-item avatar">
-                        <img src="img/icons/facebook.svg" alt="facebook" class="icones">
-                        <span class="title">https://www.facebook.com/people/Thibault-Osmont/100008397697309</span>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--  Scripts-->
-      <script src="js/jquery-2.1.4.min.js"></script>
-      <script src="js/materialize.min.js"></script>
-      <script src="js/init.js"></script>
-      <!-- Vertical timeline -->
-      <script src="js/main.js"></script>
-      <script src="js/modernizr.js"></script>
-   </body>
-</html>
+<html lang="en" ng-app="translate">
+<head>
+	<title>Thibault Osmont</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="css/extras.css"/> -->
+	<link rel="stylesheet" type="text/css" href="css/vertical-timeline.css"/>
+	<link rel="stylesheet" type="text/css" href="css/octicons/octicons.css"/>
+</head>
+<body ng-controller="TransaleCtrlr">	
+
+	<div id="header">
+		<div class="container">
+				<div class="text-xs-center white" id="presentation">
+					<h1 class="h1-big lobster">Thibault Osmont</h1>
+					<h2 class="h2-big ubuntu">{{'HEADTITLE' | translate}}</h2>
+				</div>
+			</canvas>
+			
+		</div>
+	</div>
+
+	<nav class="navbar navbar-light bg-faded">
+		<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsibleNav">&#9776;</button>
+		<div class="collapse navbar-toggleable-xs" id="collapsibleNav">
+			<a class="navbar-brand" href="#">Thibault Osmont</a>
+			<ul class="nav navbar-nav navbar-links-spy">
+				<li class="nav-item"><a href="#apropos" class="nav-link">{{"ABOUT_TITLE" | translate}}</a></li>
+				<li class="nav-item dropdown">
+					<a class="dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						{{"EXPERIENCE_TITLE" | translate}}
+					</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#experience">2016</a>
+						<a class="dropdown-item" href="#2015">2015</a>
+						<a class="dropdown-item" href="#2013">2013</a>
+					</div>
+				</li>
+				<li class="nav-item"><a href="#competences" class="nav-link">{{"SKILLS_TITLE" | translate}}</a></li>
+				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+			</ul>
+			<ul class="nav navbar-nav pull-xs-right">
+				<li class="nav-item">
+					<img src="img/icons/france-flag.png" alt="" ng-click="changeLanguage('fr')" data-toggle="tooltip" data-placement="bottom" title="Français" class="lang" id="fr">
+				</li>
+				<li class="nav-item">
+					<img src="img/icons/uk-flag.png" alt="" ng-click="changeLanguage('en')" data-toggle="tooltip" data-placement="bottom" title="English" class="lang" id="en">
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" id="up" data-toggle="tooltip" data-placement="left" title="Haut de page"><span class="octicon octicon-chevron-up"></span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div id="apropos">
+		<div class="container">
+			<h1 class="h1-big lobster ">{{"ABOUT_TITLE" | translate}}</h1>
+			<p class="p-big ubuntu ">
+				{{'ABOUT_CONTENT' | translate}}	
+			</p>
+		</div>
+	</div>
+
+	<div id="experience">
+		<div class="container">
+			<h1 class="h1-big lobster white">{{"EXPERIENCE_TITLE" | translate}}</h1>
+			<div class="section" id="vertical-container">
+				<section id="cd-timeline" class="cd-container">
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img left">
+							<img src="img/icons/ic_school_white_24px.svg" alt="Licence Pro">
+						</div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content">
+							<h3 class="ubuntu">{{"LPSIL_TITLE" | translate}}</h3>
+							<p class="ubuntu">
+								{{"LPSIL_CONTENT_L1" | translate}}
+								<br/>{{"LPSIL_CONTENT_L2" | translate}}
+								<br/>{{"LPSIL_CONTENT_L3" | translate}}
+								<br/>{{"LPSIL_CONTENT_L4" | translate}}
+							</p>
+							<span class="cd-date">2015 - 2016</span>
+						</div>
+						<!-- cd-timeline-content -->
+					</div>
+					<!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block droite">
+						<div class="cd-timeline-img right">
+							<img src="img/icons/ic_work_white_24px.svg" alt="Job d'été 2015">
+						</div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content">
+							<h3 class="ubuntu">{{'TRAINEESHIP_TITLE' | translate}}</h3>
+							<p>
+								{{"TRAINEESHIP_CONTENT_L1" | translate}}
+								<br/>{{"TRAINEESHIP_CONTENT_L2" | translate}}
+							</p>
+							<span class="cd-date">{{"TRAINEESHIP_DATE" | translate}}</span>
+						</div>
+						<!-- cd-timeline-content -->
+
+					</div>
+					<!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img left">
+							<img src="img/icons/ic_school_white_24px.svg" alt="DUT">
+						</div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content">
+							<h3 class="ubuntu" id="2013">{{"DEGREE_TITLE" | translate}}</h3>
+							<p class="ubuntu">
+								{{"DEGREE_CONTENT_L1" | translate}}
+								<br/>{{"DEGREE_CONTENT_L2" | translate}}
+							</p>
+							<span class="cd-date">2013 - 2015</span>
+						</div>
+					<!-- cd-timeline-content -->
+					</div>
+					<!-- cd-timeline-block -->
+
+					<div class="cd-timeline-block">
+						<div class="cd-timeline-img left">
+							<img src="img/icons/ic_school_white_24px.svg" alt="BAC">
+						</div>
+						<!-- cd-timeline-img -->
+						<div class="cd-timeline-content">
+							<h3 class="ubuntu">{{"A_LEVELS_TITLE" | translate}}</h3>
+							<p class="ubuntu">
+								{{"A_LEVELS_CONTENT_L1" | translate}}
+								<br>{{"A_LEVELS_CONTENT_L2" | translate}}
+							</p>
+							<span class="cd-date">2013</span>
+						</div>
+						<!-- cd-timeline-content -->
+					</div>
+					<!-- cd-timeline-block -->
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<div id="competences">
+		<div class="container">
+			<h1 class="h1-big lobster">{{"SKILLS_TITLE" | translate}}</h1>
+
+			<div class="row">
+				<div class="col-xs-12">&nbsp;</div>
+				<div class="col-lg-6">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-primary" id="panel1">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapse11" href="#collapse11">{{"SKILLS_SOFTWARE_DEV_TITLE" | translate}}</a>
+								</h4>
+							</div>
+							<div id="collapse11" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<dl class="">
+										<dt>{{"SKILLS_SOFTWARE_DEV_1_T" | translate}}</dt>
+										<dd>{{"SKILLS_SOFTWARE_DEV_1_C" | translate}}</dd>
+
+										<dt>{{"SKILLS_SOFTWARE_DEV_2_T" | translate}}</dt>
+										<dd>{{"SKILLS_SOFTWARE_DEV_2_C" | translate}}</dd>
+
+										<dt>{{"SKILLS_SOFTWARE_DEV_3_T" | translate}}</dt>
+										<dd>{{"SKILLS_SOFTWARE_DEV_3_C" | translate}}</dd>
+
+										<dt>{{"SKILLS_SOFTWARE_DEV_4_T" | translate}}</dt>
+										<dd>{{"SKILLS_SOFTWARE_DEV_4_C" | translate}}</dd>
+
+										<dt>{{"SKILLS_SOFTWARE_DEV_5_T" | translate}}</dt>
+										<dd>{{"SKILLS_SOFTWARE_DEV_5_C" | translate}}</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" id="panel2">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapse12" href="#collapse12" class="collapsed">{{"SKILLS_WEB_DEV_TITLE" | translate}}</a>
+								</h4>
+							</div>
+							<div id="collapse12" class="panel-collapse collapse">
+								<div class="panel-body">
+									<dl class="dl-horizontal ">
+										<dt>{{"SKILLS_WEB_DEV_1_T"}}</dt>
+										<dd>&nbsp;</dd>
+
+										<dt>{{"SKILLS_WEB_DEV_2_T" | translate}}</dt>
+										<dd>{{"SKILLS_WEB_DEV_2_C" | translate}}</dd>
+
+										<dt>{{"SKILLS_WEB_DEV_3_T" | translate}}</dt>
+										<dd>{{"SKILLS_WEB_DEV_3_C" | translate}}</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+							
+						<div class="panel panel-default" id="panel3">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapse13" href="#collapse13" class="collapsed">{{"SKILLS_MOBILE_DEV_TITLE" | translate}}</a>
+								</h4>
+							</div>
+							<div id="collapse13" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p class="">{{"SKILLS_MOBILE_DEV_TC" | translate}}</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="panel panel-default" id="panel4">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapse14" href="#collapse14" class="collapsed">{{"SKILLS_OS_TITLE" | translate}}</a>
+								</h4>
+							</div>
+							<div id="collapse14" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p class="">
+										<b>{{"SKILLS_OS_C_1" | translate}}</b> {{"SKILLS_OS_C_2" | translate}}
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-lg-6">
+					<div class="panel-group" id="accordion">
+						<div class="panel panel-primary" id="panel1">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapse21" href="#collapse21">{{"SKILLS_ORG_MANAGEMENT_TITLE" | translate}}</a>
+								</h4>
+							</div>
+							<div id="collapse21" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<dl class="dl-horizontal">
+										<dt>{{"SKILLS_ORG_MANAGEMENT_1_T" | translate}}</dt>
+										<dd>{{"SKILLS_ORG_MANAGEMENT_1_C" | translate}}</dd>
+
+										<dt>{{"SKILLS_ORG_MANAGEMENT_2_T" | translate}}</dt>
+										<dd>{{"SKILLS_ORG_MANAGEMENT_2_C" | translate}}</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+			
+						<div class="panel panel-default" id="panel2">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapse22" href="#collapse22" class="collapsed">{{"SKILS_RIGHTS_TITLE" | translate}}</a>
+								</h4>
+							</div>
+							<div id="collapse22" class="panel-collapse collapse">
+								<div class="panel-body">
+									<dl class="dl-horizontal">
+										<dt>{{"SKILLS_RIGHTS_1_T" | translate}}</dt>
+										<dd>{{"SKILLS_RIGHTS_1_C" | translate}}</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					
+						<div class="panel panel-default" id="panel3">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapse23" href="#collapse23" class="collapsed">{{"SKILLS_ECONOMY_TITLE" | translate}}</a>
+								</h4>
+							</div>
+							<div id="collapse23" class="panel-collapse collapse">
+								<div class="panel-body">
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="panel panel-default" id="panel4">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-target="#collapse24" href="#collapse24" class="collapsed">{{"SKILLS_LANG_TITLE" | translate}}</a>
+								</h4>
+							</div>
+							<div id="collapse24" class="panel-collapse collapse">
+								<div class="panel-body">
+									<dl class="dl-horizontal">
+										<dt>{{"SKILLS_LANG_1_T" | translate}}</dt>
+										<dd>{{"SKILLS_LANG_1_C" | translate}}</dd>
+
+										<dt>{{"SKILLS_LANG_2_T" | translate}}</dt>
+										<dd>{{"SKILLS_LANG_2_C" | translate}}</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>  
+	</div>
+
+	<div class="transition">
+		
+	</div>
+
+	<div id="contact">
+		<div class="container">
+			<h1 class="h1-big lobster">{{"CONTACT_TITLE" | translate}}</h1>
+
+			<div class="row">
+				<div class="col-xs-12">&nbsp;</div>
+				<div class="col-md-6">
+					<blockquote class="ubuntu lead">
+						<p><span class="mega-octicon octicon-mail"></span> thyb44@gmail.com</p>
+						<p><span class="mega-octicon octicon-device-mobile"></span> {{"PHONE_NUMBER" | translate}}</p>
+						<p><span class="mega-octicon octicon-globe"></span> Nantes, France</p>
+						<p><span class="mega-octicon octicon-file-pdf"></span> {{"CV" | translate}}</p>
+					</blockquote>
+				</div>
+				<div class="col-mg-6 network">
+					<a href="https://github.com/ThibaultOsmont" data-toggle="tooltip" data-placement="right" title="{{'GITHUB-1' | translate}}">
+						<img src="img/icons/github.png" alt="">
+					</a>
+					<br/>
+					<a href="https://fr.linkedin.com/in/thibault-osmont-5812938b" data-toggle="tooltip" data-placement="right" title="{{'LINKEDIN' | translate}}">
+						<img src="img/icons/linkedin.png" alt="">
+					</a>
+					<br/>
+					<a href="https://github.com/thibaultosmont/thibaultosmont.github.io" data-toggle="tooltip" data-placement="right" title="{{'GITHUB-2' | translate}}">
+						<img src="img/icons/github2.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/tether.min.js"></script>
+	<script type="text/javascript" src="js/init.js"></script>
+	<script type="text/javascript" src="js/bootstrap-4.0-a2.min.js"> </script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="https://cdn.rawgit.com/SlexAxton/messageformat.js/0.2.2/messageformat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-sanitize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.8.1/angular-translate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-interpolation-messageformat/2.8.1/angular-translate-interpolation-messageformat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-cookie/2.8.1/angular-translate-storage-cookie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-storage-local/2.8.1/angular-translate-storage-local.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-url/2.8.1/angular-translate-loader-url.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate-loader-static-files/2.8.1/angular-translate-loader-static-files.js"></script>
+    <script type="text/javascript" src="js/angular-ctrlr.js"></script>
+</body>
+</html>
