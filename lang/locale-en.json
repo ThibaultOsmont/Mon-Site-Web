@@ -2,10 +2,15 @@
 	"HEADTITLE" 					: "IT Developper",
 
 	"ABOUT_TITLE"					: "About me",
-	"ABOUT_CONTENT"					: "At the high school ending, I was interested in economic and social sciences, that is why in 2013 I got a high school diploma in this field. However, that was a this moment that I discovered a passion for the computer science Science, that is why I entered in a two-year technical degree in this field at the University Institute of Technology of Nantes. I sccessfully  graduated in 2015. Then, I engaged myself into a Professionnal Licence in IT Services and Softwares, in aprenticeship with La Poste Group (Central IT System Department at Nantes). ",
+	"ABOUT_CONTENT"					: "At the high school ending, I was interested in economic and social sciences, that is why in 2013 I got a high school diploma in this field. However, that was a this moment that I discovered a passion for the computer science Science, that is why I entered in a two-year technical degree in this field at the University Institute of Technology of Nantes. I sccessfully  graduated in 2015. Then, I engaged myself in 2015 into a Professionnal Licence in IT Services and Softwares, in aprenticeship with La Poste Group (Central IT System Department at Nantes). I am actually graduating from a Bachelor of SCience in IT at ENI - IT Scholl, in partnership with CNAM, and still in aprenticeship with La Poste Group. My goal is to achieve a Master of SCience, that I was not able to get in with my Professionnal Licence.",
 	
 	"EXPERIENCE_TITLE"	 			: "My professionnal experience",
 	
+	"LEIC_TITLE"					: "Bachelor of SCience in IT",
+	"LEIC_CONTENT_L1"				: "ENI IT School, in partnership with CNAM",
+	"LEIC_CONTENT_L2"				: "In aprenticeship with La Poste Group (Central IT System Department at Nantes).",
+	"LEIC_CONTENT_L3"				: "Mission: I am actually pursuing the project of recasting the two main applications of the pole in charge to retrieve data about the companie's secutiy. The administration tool that I used to work on last year is evolving and recieving some new features.",
+
 	"LPSIL_TITLE"					: "Professionnal Licence",
 	"LPSIL_CONTENT_L1"				: "IT Services and Softwares, Concurent Programming and Middlewares specialty",
 	"LPSIL_CONTENT_L2" 				: "University Institute of Technology of Nantes",
@@ -33,7 +38,7 @@
 	"SKILLS_SOFTWARE_DEV_2_T"		: "Modeling",
 	"SKILLS_SOFTWARE_DEV_2_C"		: "UML, Design Patterns, Component-based Software Programming, DDD",
 	"SKILLS_SOFTWARE_DEV_3_T"		: "Object-oriented Programming",
-	"SKILLS_SOFTWARE_DEV_3_C"		: "Java, JEE (with Spring framework, Spring-data, Thymeleaf template engine), Pyhton",
+	"SKILLS_SOFTWARE_DEV_3_C"		: "Java, JEE (with Spring framework, Spring-data, Thymeleaf template engine), Python",
 	"SKILLS_SOFTWARE_DEV_4_T"		: "Procedural Programming",
 	"SKILLS_SOFTWARE_DEV_4_C"		: "C, assembler notions",
 	"SKILLS_SOFTWARE_DEV_5_T"		: "Library Management",
