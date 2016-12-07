@@ -2,12 +2,17 @@
 	"HEADTITLE" 					: "Développeur Informatique",
 
 	"ABOUT_TITLE"					: "A propos de moi",
-	"ABOUT_CONTENT"					: "Initialement intéressé par les sciences économiques et sociales, je suis titulaire d'un bac dans cette spécialité depuis 2013. C'est durant cette année que me vint une passion pour l'informatique et le numérique, c'est pourquoi je me suis engagé, avec succès, dans un DUT Informatique. Titulaire de ce diplôme depuis 2015, je me suis engagé dans une Licence Professionnelle, spécialité Services Informatiques et Logiciels, en alternance avec le groupe La Poste. ",
+	"ABOUT_CONTENT"					: "Initialement intéressé par les sciences économiques et sociales, je suis titulaire d'un bac dans cette spécialité depuis 2013. C'est durant cette année que me vint une passion pour l'informatique et le numérique, c'est pourquoi je me suis engagé, avec succès, dans un DUT Informatique. Titulaire de ce diplôme depuis 2015, je me suis engagé en 2015 dans une Licence Professionnelle, spécialité Services Informatiques et Logiciels, en alternance avec le groupe La Poste. Cette anné, j'effectue une licence Informatique à l'ENI - Ecole Informatique, en partenariat avec le CNAM, et toujours en alternance avec le Groupe La Poste. J'ai pour espoir de poursuivre vers un master, chose que ne m'a pas permise la Licence Professionnelle.",
 	
 	"EXPERIENCE_TITLE" 				: "Mon expérience",
+
+	"LEIC_TITLE"					: "Licence Informatique",
+	"LEIC_CONTENT_L1"				: "ENI Ecole Informatique, en partenariat avec le CNAM",
+	"LEIC_CONTENT_L2"				: "En alternance avec le Groupe La Poste (DSI Centrale de Nantes).",
+	"LEIC_CONTENT_L3"				: "Mission: poursuite du projet de refonte des deux applications constituant le coeur de métier du pôle \"collecte\" du Département de la Sécurité Globale du Groupe. ",
 	
 	"LPSIL_TITLE"					: "Licence Professionnelle",
-	"LPSIL_CONTENT_L1"				: "Mention Services Informatiques et Logiciels, spécialité Développement d'Applications Réparties.",
+	"LPSIL_CONTENT_L1"				: "Mention Services Informatiques et Logiciels, Spécialité Développement d'Applications Réparties.",
 	"LPSIL_CONTENT_L2" 				: "IUT de Nantes.",
 	"LPSIL_CONTENT_L3"				: "En alternance avec le Groupe La Poste (DSI Centrale de Nantes).",
 	"LPSIL_CONTENT_L4"				: "Mission: participer au projet de refonte de deux applications constituant le coeur de métier du pôle \"collecte\" du Département de la Sécurité Globale du Groupe. ",
@@ -33,7 +38,7 @@
 	"SKILLS_SOFTWARE_DEV_2_T"		: "Modélisation",
 	"SKILLS_SOFTWARE_DEV_2_C"		: "UML, Design Patterns, programmation par composants",
 	"SKILLS_SOFTWARE_DEV_3_T"		: "Programmation objet",
-	"SKILLS_SOFTWARE_DEV_3_C"		: "Java, JEE (avec Spring, Spring-data, Thymeleaf template engine), Pyhton",
+	"SKILLS_SOFTWARE_DEV_3_C"		: "Java, JEE (avec Spring, Spring-data, Thymeleaf template engine), Python",
 	"SKILLS_SOFTWARE_DEV_4_T"		: "Programmation procédurale",
 	"SKILLS_SOFTWARE_DEV_4_C"		: "C, notions d'assembleur",
 	"SKILLS_SOFTWARE_DEV_5_T"		: "Gestion des librairies",
