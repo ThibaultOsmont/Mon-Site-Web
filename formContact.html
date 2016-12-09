@@ -6,7 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-		<script src='https://www.google.com/recaptcha/api.js'></script>
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 
@@ -83,10 +82,6 @@
 				</div>
 
 				<div class="center-align">
-					<div class="g-recaptcha center-align" data-sitekey="6LelPg4UAAAAAMxiugHO7bAxU4r-qqzj8_uK8zgb"></div>
-				</div>
-
-				<div class="center-align">
 					<button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
 						<i class="material-icons right">send</i>
 					</button>
@@ -94,10 +89,10 @@
 			</form>
 
 			<script type="text/javascript">
-				document.getElementById('fcontact').onsubmit = function() {
-					document.getElementById('fcontact').style = "display : none";
-					document.getElementById("thankyou_message").style = "display: block";
-				}
+				$("#fcontact").submit(function() {
+					$("#fcontact").css("display", "none");
+					$("#thankyou_message").css("display", "block");
+				});
 			</script>
 		</div>
 	</body>
