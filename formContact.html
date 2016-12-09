@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+
+		<style type="text/css">
+			/* label color */
+			.input-field label {
+				color: #000;
+			}
+			/* label focus color */
+			.input-field input[type=text]:focus + label {
+				color: #0275D8;
+			}
+			/* label underline focus color */
+			.input-field input[type=text]:focus {
+				border-bottom: 1px solid #0275D8;
+				box-shadow: 0 1px 0 0 #000;
+			}
+			.input-field textarea:focus + label {
+				color: #0275D8 !important;
+			}	
+			.input-field textarea:focus{
+				border-bottom: 1px solid #0275D8 !important;
+				box-shadow: 0 1px 0 0 #000 !important;
+			}
+			/* valid color */
+			.input-field input[type=text].valid {
+				border-bottom: 1px solid #0275D8;
+				box-shadow: 0 1px 0 0 #000;
+			}
+			/* icon prefix focus color */
+			.input-field .prefix.active {
+				color: #0275D8;
+			}
+			button {
+				background-color: #0275D8 !important;
+			}
+			blockquote {
+				border-left: 5px solid #D50000;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="thankyou_message" style="display: none;">
+			<blockquote>
+				<h1>Merci !</h1>
+
+				<p>Je ne manquerai pas de lire attentivement votre message et d'y répondre.</p>
+			</blockquote>
+		</div>
+		<div class="row">
+			<form class="col s12" id="fcontact" action="https://script.google.com/macros/s/AKfycbwituHY8uPlqU36iBVcT9J7cUXZo0SNF-uvL9HqiQwmWDLU1mV5/exec" method="POST">
+				<div class="input-field col m6">
+					<i class="material-icons prefix">account_circle</i>
+					<input id="nom" name="nom" type="text" class="validate">
+					<label for="nom">Nom et Prénom</label>
+				</div>
+
+				<div class="input-field col m6">
+					<i class="material-icons prefix">mail_outline</i>
+					<input id="email" name="email" type="text" class="validate">
+					<label for="email">e-mail</label>
+				</div>
+
+				<div class="input-field col s12">
+					<i class="material-icons prefix">chat_bubble_outline</i>
+					<input id="objet" name="object" type="text" class="validate">
+					<label for="objet">Objet</label>
+				</div>
+
+				<div class="input-field col s12">
+					<i class="material-icons prefix">chat</i>
+					<textarea id="message" name="message" class="materialize-textarea"></textarea>
+					<label for="message">Message</label>
+				</div>
+
+				<div class="center-align">
+					<div class="g-recaptcha center-align" data-sitekey="6LelPg4UAAAAAMxiugHO7bAxU4r-qqzj8_uK8zgb"></div>
+				</div>
+
+				<div class="center-align">
+					<button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+						<i class="material-icons right">send</i>
+					</button>
+				</div>
+			</form>
+		</div>
+		<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+	</body>
+</html>
