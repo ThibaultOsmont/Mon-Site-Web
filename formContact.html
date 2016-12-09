@@ -57,7 +57,7 @@
 			</blockquote>
 		</div>
 		<div class="row">
-			<form class="col s12" id="fcontact" action="https://script.google.com/macros/s/AKfycbwituHY8uPlqU36iBVcT9J7cUXZo0SNF-uvL9HqiQwmWDLU1mV5/exec" method="POST">
+			<form class="col s12" id="fcontact" action="https://formspree.io/thyb44@gmail.com" method="POST">
 				<div class="input-field col m6">
 					<i class="material-icons prefix">account_circle</i>
 					<input id="nom" name="nom" type="text" class="validate">
@@ -92,8 +92,13 @@
 					</button>
 				</div>
 			</form>
+
+			<script type="text/javascript">
+				document.getElementById('fcontact').onsubmit = function() {
+					document.getElementById('fcontact').style = "display : none";
+					document.getElementById("thankyou_message").style = "display: block";
+				}
+			</script>
 		</div>
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 	</body>
 </html>
