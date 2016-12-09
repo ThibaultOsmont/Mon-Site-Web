@@ -6,7 +6,7 @@
 
 - HTML5
 - CSS3
-   - [Bootstrap] (http://v4-alpha.getbootstrap.com/) V4-alpha2
+   - [Bootstrap] (http://v4-alpha.getbootstrap.com/) V4-alpha-5
    - [Vertical Timeline] (https://codepen.io/codyhouse/pen/FdkEf/)
 - Javascript
   - [JQuery] (https://jquery.com/download/)
