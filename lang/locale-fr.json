@@ -80,6 +80,8 @@
 	"PHONE_NUMBER"					: "06 16 01 14 64",
 	"CV"							: "Télécharger mon CV",
 
+	"CVNOTYET"						: "Bientôt",
+
 	"LINKEDIN"						: "Mon profil LinkedIn",
 	"GITHUB-1"						: "Mon Github",
 	"GITHUB-2"						: "Code source du site"
