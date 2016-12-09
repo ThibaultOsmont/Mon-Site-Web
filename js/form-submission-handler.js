@@ -42,7 +42,7 @@ function handleFormSubmit(event) { // handles form submit withtout any jquery
 	} else {
 		document.getElementById('email').className = "valid";
 		var url = event.target.action; //
-		var xhr = new XMLHttpRequest();
+		/*var xhr = new XMLHttpRequest();
 		xhr.open('POST', url);
 		// xhr.withCredentials = true;
 		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
@@ -52,12 +52,28 @@ function handleFormSubmit(event) { // handles form submit withtout any jquery
 			document.getElementById('fcontact').style.display = 'none'; // hide form
 			document.getElementById('thankyou_message').style.display = 'block';
 			return;
-		};
+		};*/
 		// url encode form data for sending as post data
 		var encoded = Object.keys(data).map(function(k) {
 			return encodeURIComponent(k) + '=' + encodeURIComponent(data[k])
 		}).join('&')
 		xhr.send(encoded);
+		
+		$.ajax({
+			headers: {
+				'Content-Type' : 'application/x-www-form-urlencoded'
+			},
+			method : "POST",
+			url : url,
+			crossDomain : true,
+			data : encoded,
+			success: function() {
+				
+			},
+			error : function(xhr, error, status) {
+				console.log(error, status);	
+			}
+		});
 	}
 }
 
