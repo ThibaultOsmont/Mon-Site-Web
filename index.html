@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<!-- <link rel="stylesheet" type="text/css" href="css/extras.css"/> -->
@@ -16,15 +18,15 @@
 
 	<div id="header">
 		<div class="container">
-				<div class="text-xs-center white" id="presentation">
-					<h1 class="h1-big lobster">Thibault Osmont</h1>
-					<h2 class="h2-big ubuntu">{{'HEADTITLE' | translate}}</h2>
-				</div>
-			</canvas>
+			<div class="text-xs-center white" id="presentation">
+				<h1 class="h1-big lobster">Thibault Osmont</h1>
+				<h2 class="h2-big ubuntu">{{'HEADTITLE' | translate}}</h2>
+			</div>
 		</div>
 	</div>
 
-	<nav class="navbar navbar-light bg-faded">
+	<nav class="navbar navbar-dark bg-inverse">
+	<!-- <nav class="navbar navbar-light bg-faded"> -->
 		<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsibleNav">&#9776;</button>
 		<div class="collapse navbar-toggleable-xs" id="collapsibleNav">
 			<a class="navbar-brand" href="#">Thibault Osmont</a>
@@ -44,7 +46,7 @@
 				<li class="nav-item"><a href="#competences" class="nav-link">{{"SKILLS_TITLE" | translate}}</a></li>
 				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
 			</ul>
-			<ul class="nav navbar-nav pull-xs-right">
+			<ul class="nav navbar-nav float-xs-right">
 				<li class="nav-item">
 					<img src="img/icons/france-flag.png" alt="" ng-click="changeLanguage('fr')" data-toggle="tooltip" data-placement="bottom" title="Français" class="lang" id="fr">
 				</li>
@@ -344,7 +346,7 @@
 						<p><span class="mega-octicon octicon-mail"></span> thyb44@gmail.com</p>
 						<p><span class="mega-octicon octicon-device-mobile"></span> {{"PHONE_NUMBER" | translate}}</p>
 						<p><span class="mega-octicon octicon-globe"></span> Nantes, France</p>
-						<p><span class="mega-octicon octicon-file-pdf"></span> {{"CV" | translate}}</p>
+						<p><span class="mega-octicon octicon-file-pdf" data-toggle="tooltip" data-placement="bottom" title="{{'CVNOTYET' | translate}}"></span> {{"CV" | translate}}</p>
 					</blockquote>
 				</div>
 				<div class="col-mg-6 network">
@@ -361,13 +363,18 @@
 					</a>
 				</div>
 			</div>
+
+			<br/>
+			<!-- <iframe src="formContact.html" frameborder="0" scrolling="no" width="100%" height="350px"></iframe> -->
 		</div>
 	</div>
 
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/tether.min.js"></script>
 	<script type="text/javascript" src="js/init.js"></script>
-	<script type="text/javascript" src="js/bootstrap-4.0-a2.min.js"> </script>
+	<script type="text/javascript" src="js/bootstrap-4.0-a5.min.js"> </script>
+
+
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 	<script src="https://cdn.rawgit.com/SlexAxton/messageformat.js/0.2.2/messageformat.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular-sanitize.js"></script>
