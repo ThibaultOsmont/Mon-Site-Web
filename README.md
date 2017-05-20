@@ -1,6 +1,6 @@
 # ThibaultOsmont.github.io
 
->Voici le code source de mon site WEB personnel :blush: [check it out] (http://thibaultosmont.github.io/) !
+>Voici le code source de mon site WEB personnel :blush: [check it out](http://thibaultosmont.github.io/) !
 
 ##Développé avec:
 
